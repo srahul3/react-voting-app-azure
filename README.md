@@ -1,7 +1,7 @@
 # Getting Started with voting app built using React
 The application can be used to facilitate the kiosk voting to identify the winning football team.
 
-##Create a new vote.
+## Create a new vote.
 Go ahead and modify ./src/vote_store/votedata.json and update your data
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
