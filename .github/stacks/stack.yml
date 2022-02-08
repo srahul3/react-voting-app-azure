@@ -24,8 +24,10 @@ configs:
         topics:
         - react
         - reactjs
-        - voting app
+        - voting-app
         - azure
+        - azure-static-app
+        - azure-react-app
         
    environments:                                        
     - name: development
