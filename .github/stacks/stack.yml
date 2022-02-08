@@ -1,7 +1,7 @@
 version: 0.1.0   
 
 name: voting-app-react
-description: 'A GitHub Stack will provide a bootstarp code of voting application. The Stack will self deploy to Azure on commit or Pull Request event on main branch'
+description: 'The Stack provides all boilerplate app and deployment code of the voting application'
 
 branding:
   icon: 'cloud'
