@@ -1,0 +1,8 @@
+
+  name: "Setup and deploy a react voting app to Azure Static Web App"
+
+  on:
+   workflow_dispatch:
+    inputs:
+      AZURE_STATIC_WEB_APPS_DEPLOYMENT_TOKEN:
+        required: true

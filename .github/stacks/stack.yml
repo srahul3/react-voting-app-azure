@@ -1,0 +1,39 @@
+version: 0.1.0   
+
+name: A GitHub stack to deploy an React JS voting App as Azure Static Web Apps
+description: A GitHub Stack will provide a bootstarp code of voting application. The Stack will selp deploy on Azure on commit or Pull Request event on main branch.
+
+branding:
+  icon: 'cloud'
+  color: 'blue'
+
+inputs:
+
+  - name: AZURE_STATIC_WEB_APPS_DEPLOYMENT_TOKEN
+    description: Enter the deployment token. Go to Azure portal and create a 'Static Web App' and deploy. Now in deployed app click 'Manage deployment Token' and copy the displayed deployment token.
+    is-secret: true
+    required: true
+    
+configs:
+   repo-metadata:
+      parameters:
+        description: 'A React JS voting App deployed as Azure Static Web App'
+        secrets: 
+          - name: AZURE_STATIC_WEB_APPS_DEPLOYMENT_TOKEN
+            value: ${{inputs.AZURE_STATIC_WEB_APPS_DEPLOYMENT_TOKEN}}
+        topics:
+        - react
+        - reactjs
+        - voting app
+        - azure
+        
+   environments:                                        
+    - name: development
+      parameters: 
+        protected-branches: false
+        allowed-branch-rules:
+          - main
+          - releases/*
+
+init:
+ uses: "stack-init.yaml"
