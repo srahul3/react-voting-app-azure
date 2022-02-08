@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import VotingCard from "./components/VotingCard";
-import teamsJson from "./vote_store/teams.json";
+import teamsJson from "./vote_store/votedata.json";
 import "./assets/scss/styles.scss";
 import "bootstrap/dist/css/bootstrap.css";
 
