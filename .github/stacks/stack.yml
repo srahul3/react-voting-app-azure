@@ -36,4 +36,4 @@ configs:
           - releases/*
 
 init:
- uses: "stack-init.yaml"
+ uses: "stack-init.yml"
